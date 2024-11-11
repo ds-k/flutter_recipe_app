@@ -30,15 +30,14 @@ class RecipePage extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: ListView(
+          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             RecipeTitle(),
             RecipeMenu(),
-            RecipeListItem(),
-            RecipeListItem(),
-            RecipeListItem(),
-            RecipeListItem(),
+            RecipeListItem("coffee", "Coffee"),
+            RecipeListItem("burger", "Burger"),
+            RecipeListItem("pizza", "Pizza"),
           ],
         ),
       ),
