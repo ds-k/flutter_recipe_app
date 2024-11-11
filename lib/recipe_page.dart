@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_recipe_app/recipe/recipe_list_item.dart';
 import 'package:flutter_recipe_app/recipe/recipe_menu.dart';
@@ -9,7 +10,24 @@ class RecipePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        actions: [
+          Icon(
+            CupertinoIcons.search,
+            color: Colors.black,
+          ),
+          SizedBox(
+            width: 15,
+          ),
+          Icon(
+            CupertinoIcons.heart,
+            color: Colors.redAccent,
+          ),
+          SizedBox(
+            width: 15,
+          )
+        ],
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
