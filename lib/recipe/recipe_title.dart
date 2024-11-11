@@ -5,6 +5,9 @@ class RecipeTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("recipeTitle");
+    return Padding(
+      padding: const EdgeInsets.only(top: 25.0),
+      child: Text("Recipes", style: TextStyle(fontSize: 30)),
+    );
   }
 }
