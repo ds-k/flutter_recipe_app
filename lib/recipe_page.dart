@@ -28,16 +28,19 @@ class RecipePage extends StatelessWidget {
           )
         ],
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          RecipeTitle(),
-          RecipeMenu(),
-          RecipeListItem(),
-          RecipeListItem(),
-          RecipeListItem(),
-          RecipeListItem(),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            RecipeTitle(),
+            RecipeMenu(),
+            RecipeListItem(),
+            RecipeListItem(),
+            RecipeListItem(),
+            RecipeListItem(),
+          ],
+        ),
       ),
     );
   }
