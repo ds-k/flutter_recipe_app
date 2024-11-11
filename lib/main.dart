@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: RecipePage());
+    return MaterialApp(
+        theme: ThemeData(fontFamily: "NotoSansKr"), home: RecipePage());
   }
 }
